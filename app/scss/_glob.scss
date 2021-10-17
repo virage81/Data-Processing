@@ -1,0 +1,23 @@
+body {
+	background-color: #0f1145;
+	color: #fff;
+
+	@extend %gilroy-600;
+	font-size: 18px;
+	color: #8476aa;
+	line-height: 22px;
+}
+
+.container {
+	max-width: 1130px;
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title {
+	color: $title-color;
+	font-size: 44px;
+	line-height: 50px;
+	@extend %inter-700;
+}

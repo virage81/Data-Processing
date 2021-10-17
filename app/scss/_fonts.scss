@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'gilroy-bold';
+	src: local('gilroy-bold'), url('gilroy-bold.woff2') format('woff2'), url('gilroy-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'gilroy-regular';
+	src: local('gilroy-regular'), url('gilroy-regular.woff2') format('woff2'), url('gilroy-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'gilroy-semibold';
+	src: local('gilroy-semibold'), url('gilroy-semibold.woff2') format('woff2'), url('gilroy-semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter-Bold';
+	src: local('Inter-Bold'), url('Inter-Bold.woff2') format('woff2'), url('Inter-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter-Regular';
+	src: local('Inter-Regular'), url('Inter-Regular.woff2') format('woff2'), url('Inter-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: local('Montserrat-Medium'), url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: local('Montserrat-Regular'), url('Montserrat-Regular.woff2') format('woff2'), url('Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik-Medium';
+	src: local('Rubik-Medium'), url('Rubik-Medium.woff2') format('woff2'), url('Rubik-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik-Regular';
+	src: local('Rubik-Regular'), url('Rubik-Regular.woff2') format('woff2'), url('Rubik-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
