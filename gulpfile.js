@@ -51,7 +51,7 @@ function images() {
 				}),
 			])
 		)
-		.pipe(dest('root/images'));
+		.pipe(dest('dist/img'));
 }
 
 function build() {
@@ -59,11 +59,11 @@ function build() {
 				   'app/fonts/*.*',
 	 			   'app/css/style.min.css',
 	                     'app/js/main.min.js'], { base: 'app' }) 
-	.pipe(dest('root/'));
+	.pipe(dest('dist/'));
 }
 
 function cleanDist() {
-	 return del('root/');
+	 return del('dist/');
 }
 
 function watching() {
