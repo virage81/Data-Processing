@@ -3,7 +3,7 @@ $title-color: #99efd0;
 $default-color: #8476aa;
 
 %button {
-	border: 1px solid $accent-color;
+	border: 1px solid transparent;
 	border-radius: 3px;
 
 	color: #fff;
@@ -16,6 +16,8 @@ $default-color: #8476aa;
 	text-transform: uppercase;
 	@extend %rubik-500;
 
+	transition: all 0.2s linear;
+
 	width: 157px;
 	height: 46px;
 
@@ -24,13 +26,6 @@ $default-color: #8476aa;
 	align-items: center;
 
 	box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
-}
-
-%button-inactive {
-	background: transparent;
-	border-radius: 4px;
-	color: $accent-color;
-	box-shadow: none;
 }
 
 %gilroy-600 {

@@ -23,7 +23,6 @@ body {
 	max-width: 1130px;
 }
 
-
 .title {
 	color: $title-color;
 	font-size: 42px;
@@ -41,4 +40,33 @@ body {
 	line-height: 28px;
 	letter-spacing: 0.5px;
 	@extend %gilroy-600;
+}
+
+.btn {
+	@extend %button;
+
+	&:hover {
+		background: transparent;
+		box-shadow: none;
+		border-color: $accent-color;
+		color: $accent-color;
+	}
+}
+
+.btn--inactive {
+	@extend %button;
+
+	border-color: $accent-color;
+	border-radius: 4px;
+
+	color: $accent-color;
+	background: transparent;
+	box-shadow: none;
+
+	&:hover {
+		color: #fff;
+		background-color: $accent-color;
+
+		box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+	}
 }
