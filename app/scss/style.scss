@@ -8,8 +8,6 @@
 .top {
 	padding-top: 250px;
 
-	// background: linear-gradient(222.26deg, #3b1d60 1.22%, #040d3e 106.28%);
-
 	.header {
 		position: absolute;
 		left: 0;
@@ -65,6 +63,10 @@
 			max-width: 540px;
 			width: 100%;
 		}
+	}
+
+	&__info {
+		padding-bottom: 50px;
 	}
 
 	&__inner {
@@ -164,19 +166,19 @@
 }
 
 .partners {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	&__inner {
 		display: flex;
 		justify-content: space-around;
-
-		margin-top: 110px;
 
 		opacity: 0.3;
 	}
 }
 
 .reasons {
-	padding-top: 110px;
-	padding-bottom: 150px;
+	padding-top: 50px;
+	padding-bottom: 75px;
 
 	position: relative;
 
@@ -282,7 +284,8 @@
 }
 
 .traffic {
-	padding-bottom: 150px;
+	padding-top: 75px;
+	padding-bottom: 90px;
 
 	&__inner {
 		padding-left: 30px;
@@ -342,7 +345,7 @@
 			width: 90px;
 			height: 80px;
 
-			background: url(../img/icons/arrow.svg) center no-repeat #13C296;
+			background: url(../img/icons/arrow.svg) center no-repeat #13c296;
 
 			box-shadow: -16.0895px 24.1342px 36.6483px rgba(19, 194, 150, 0.24);
 			border-radius: 9px;
@@ -351,5 +354,89 @@
 
 	&__img {
 		border-radius: 10px;
+	}
+}
+
+.service {
+	padding: 90px 0;
+
+	&__title {
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: 0.33px;
+
+		max-width: 740px;
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		line-height: 20px;
+		max-width: 425px;
+		width: 100%;
+		margin: 32px auto 0;
+		text-align: center;
+	}
+
+	&__box {
+		margin-top: 50px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		max-width: 290px;
+		width: 100%;
+	}
+
+	&__num {
+		color: $title-color;
+		font-size: 35px;
+		line-height: 42px;
+		letter-spacing: 0.32px;
+		text-align: center;
+
+		@extend %inter-700;
+
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		text-align: center;
+	}
+}
+
+.started {
+	padding-top: 90px;
+	padding-bottom: 350px;
+
+	background: url(../img/decor/4.svg) 220px 150px no-repeat, url(../img/decor/5.svg) 15px 315px no-repeat;
+
+	&__title {
+		max-width: 770px;
+		width: 100%;
+
+		margin: 0 auto 45px;
+	}
+
+	&__link {
+		margin: 0 auto;
+	}
+}
+
+.invest {
+	padding: 50px 0 75px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 30px;
+		padding-right: 40px;
+	}
+
+	&__info {
 	}
 }

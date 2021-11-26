@@ -1,5 +1,5 @@
 body {
-	background: #040d3e  linear-gradient(222.26deg, #3b1d60 -35%, transparent);
+	background: #040d3e linear-gradient(222.26deg, #3b1d60 -35%, transparent);
 
 	@extend %gilroy-600;
 	font-size: 18px;
@@ -32,6 +32,10 @@ body {
 	text-align: center;
 	font-style: normal;
 	@extend %inter-700;
+
+	span {
+		color: $accent-color;
+	}
 }
 
 .subtitle {
