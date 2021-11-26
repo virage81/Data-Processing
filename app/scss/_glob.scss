@@ -1,5 +1,5 @@
 body {
-	background-color: #0f1145;
+	background: #040d3e  linear-gradient(222.26deg, #3b1d60 -35%, transparent);
 
 	@extend %gilroy-600;
 	font-size: 18px;
@@ -7,6 +7,8 @@ body {
 	color: $default-color;
 
 	overflow-x: hidden;
+
+	position: relative;
 }
 
 .container {
