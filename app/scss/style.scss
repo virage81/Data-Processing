@@ -428,15 +428,168 @@
 }
 
 .invest {
-	padding: 50px 0 75px;
+	padding: 50px 0 75px; 
 
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		padding-left: 30px;
 		padding-right: 40px;
+
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 16px;
+			right: -323px;
+			z-index: -2;
+
+			background: url(../img/decor/6.svg) center no-repeat;
+
+			width: 818px;
+			height: 461px;
+		}
 	}
 
 	&__info {
+		margin-top: 55px;
+
+		max-width: 470px;
+		width: 100%;
+	}
+
+	&__title {
+		text-align: left;
+	}
+
+	&__subtitle {
+		margin-bottom: 45px;
+	}
+
+	&__btn {
+		height: 54px;
+	}
+
+	.tariff-plan {
+		position: relative;
+
+		width: 260px;
+		height: auto;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 122px;
+			left: -30px;
+
+			background: $accent-green url(../img/icons/arrow-small.svg) center no-repeat;
+			width: 60px;
+			height: 60px;
+
+			box-shadow: -11px 16px 25px rgba(19, 194, 150, 0.24);
+			border-radius: 6px;
+		}
+
+		.thumb {
+			position: absolute;
+			bottom: 103px;
+			right: -113px;
+			z-index: -1;
+
+			padding: 15px 30px;
+
+			background: #516ea9;
+			box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+			border-radius: 10px;
+
+			&__title {
+				color: #fff;
+				@extend %montserrat-500;
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			&__text {
+				color: #fff;
+				font-size: 10px;
+				line-height: 14px;
+
+				@extend %openSans-600;
+				letter-spacing: 0.5px;
+				opacity: 0.8;
+			}
+		}
+
+		&__box {
+			background-color: #fff;
+			box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+			border-radius: 0 0 10px 10px;
+
+			padding: 20px 30px;
+		}
+
+		&__title {
+			@extend %montserrat-500;
+			font-size: 16px;
+			line-height: 20px;
+			color: #212b36;
+
+			margin-bottom: 2px;
+		}
+
+		&__subtitle {
+			@extend %openSans-400;
+			font-style: normal;
+			font-size: 10px;
+			line-height: 14px;
+			letter-spacing: 0.5px;
+			color: #637381;
+
+			margin-bottom: 22px;
+		}
+
+		&__price {
+			color: $accent-green;
+			@extend %montserrat-400;
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		&__link {
+			@extend %openSans-600;
+			font-size: 10px;
+			line-height: 14px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			color: #98a4af;
+
+			display: block;
+		}
+
+		.features {
+			margin-top: 20px;
+			border-top: 1px solid #d6dbdf;
+			padding-top: 15px;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&__title {
+				color: #212b36;
+				@extend %montserrat-500;
+				font-size: 14px;
+				line-height: 17px;
+			}
+
+			&__text {
+				@extend %openSans-400;
+				color: #637381;
+				font-size: 10px;
+				line-height: 14px;
+				letter-spacing: 0.5px;
+			}
+		}
 	}
 }

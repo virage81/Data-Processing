@@ -1,6 +1,7 @@
 $accent-color: #f2994a;
 $title-color: #99efd0;
 $default-color: #8476aa;
+$accent-green: #13c296;
 
 %button {
 	border: 1px solid transparent;
@@ -51,4 +52,24 @@ $default-color: #8476aa;
 %rubik-400 {
 	font-family: 'rubik-regular';
 	font-weight: 400;
+}
+
+%montserrat-500 {
+	font-family: 'Montserrat-medium';
+	font-weight: 500;
+}
+
+%montserrat-400 {
+	font-family: 'Montserrat-regular';
+	font-weight: 400;
+}
+
+%openSans-400 {
+	font-family: 'OpenSans-Regular';
+	font-weight: 400;
+}
+
+%openSans-600 {
+	font-family: 'OpenSans-semibold';
+	font-weight: 600;
 }
