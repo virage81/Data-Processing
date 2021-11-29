@@ -7,6 +7,8 @@ $accent-green: #13c296;
 	border: 1px solid transparent;
 	border-radius: 3px;
 
+	cursor: pointer;
+
 	color: #fff;
 	background-color: $accent-color;
 
@@ -42,6 +44,11 @@ $accent-green: #13c296;
 %rubik-500 {
 	font-family: 'rubik-medium';
 	font-weight: 500;
+}
+
+%inter-400 {
+	font-family: 'Inter-Regular';
+	font-weight: 400;
 }
 
 %inter-700 {

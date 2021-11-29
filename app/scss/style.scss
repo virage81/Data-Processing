@@ -634,8 +634,6 @@
 			width: 138px;
 			height: 67px;
 
-
-
 			background: url(../img/decor/7.svg) center no-repeat;
 		}
 
@@ -729,5 +727,110 @@
 			line-height: 20px;
 			letter-spacing: 0.2px;
 		}
+	}
+}
+
+.form {
+	padding-top: 150px;
+	padding-bottom: 75px;
+
+	background: url(../img/decor/10.svg) center no-repeat;
+
+	&__inner {
+		max-width: 940px;
+		width: 100%;
+
+		border-radius: 5px;
+		backdrop-filter: blur(134px);
+		background: rgba(60, 62, 152, 0.19);
+
+		padding: 50px 150px;
+	}
+
+	&__title {
+		line-height: 43px;
+		color: $accent-color;
+
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		line-height: 22px;
+		color: #95a1bb;
+
+		margin: 0 auto 25px;
+
+		max-width: 420px;
+		text-align: center;
+
+		@extend %rubik-400;
+	}
+
+	.form-group {
+		margin: 0 auto;
+		text-align: center;
+
+		display: flex;
+		justify-content: center;
+		&__label {
+			position: absolute;
+
+			width: 1px;
+			height: 1px;
+
+			padding: 0;
+			border: 0;
+			overflow: hidden;
+
+			white-space: nowrap;
+		}
+		&__input {
+			max-width: 290px;
+			width: 100%;
+			height: 56px;
+
+			padding: 10px 8px;
+
+			border-radius: 5px 0 0px 5px;
+			border: none;
+			outline: none;
+
+			@extend %inter-400;
+			color: #fff;
+			font-size: 20px;
+			letter-spacing: 0.2px;
+
+			background: rgba(#979797, 0.1);
+			transition: all 0.2s linear;
+
+			&::placeholder {
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			&:focus {
+				box-shadow: -11.09px 18.13px 36.6483px rgba(#979797, 0.1);
+			}
+		}
+
+		&__btn {
+			display: inline-block;
+
+			border-radius: 0px 5px 5px 0px;
+
+			width: 128px;
+			height: 56px;
+		}
+	}
+
+	&__text {
+		@extend %gilroy-600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		text-align: center;
+
+		margin-top: 16px;
 	}
 }
