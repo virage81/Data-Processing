@@ -23,6 +23,13 @@ body {
 	max-width: 1130px;
 }
 
+.container-decor {
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
 .title {
 	color: $title-color;
 	font-size: 42px;
