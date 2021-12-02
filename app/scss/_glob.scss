@@ -6,8 +6,6 @@ body {
 	line-height: 22px;
 	color: $default-color;
 
-	overflow-x: hidden;
-
 	position: relative;
 }
 
@@ -51,11 +49,13 @@ body {
 .btn {
 	@extend %button;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background: transparent;
 		box-shadow: none;
 		border-color: $accent-color;
 		color: $accent-color;
+		outline: none;
 	}
 }
 

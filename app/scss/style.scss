@@ -3,6 +3,8 @@
 @import 'normalize';
 @import 'glob';
 
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+
 @import 'media';
 
 .top {
@@ -153,13 +155,19 @@
 			line-height: 22px;
 		}
 
-		&__info {
-			&-link {
-				margin-top: 5px;
-				color: #6d6d78;
-				@extend %rubik-400;
-				font-size: 14px;
-				line-height: 22px;
+		&__info-link {
+			display: block;
+			margin-top: 7px;
+
+			color: #6d6d78;
+			@extend %rubik-400;
+			font-size: 14px;
+			line-height: 22px;
+
+			transition: all 0.2s linear;
+
+			&:hover {
+				color: rgba($accent-color, 0.87);
 			}
 		}
 	}
@@ -807,6 +815,7 @@
 			&::placeholder {
 				font-size: 14px;
 				line-height: 20px;
+				transform: translateY(-2px);
 			}
 
 			&:focus {
@@ -832,5 +841,116 @@
 		text-align: center;
 
 		margin-top: 16px;
+	}
+}
+
+.footer {
+	padding: 45px 0 90px;
+
+	background: url(../img/decor/11.svg) center center/cover no-repeat;
+
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-bottom: 94px;
+
+		&__logo {
+			color: $accent-color;
+
+			font-size: 26px;
+			line-height: 32px;
+			letter-spacing: 0.325px;
+		}
+
+		&__social {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__link {
+			width: 40px;
+			height: 40px;
+
+			background: rgba(246, 246, 246, 0.1);
+
+			border-radius: 50%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				fill: #fff;
+
+				transition: all 0.2s linear;
+			}
+
+			&:hover svg {
+				fill: $accent-color;
+			}
+		}
+
+		&__link + .footer-top__link {
+			margin-left: 16px;
+		}
+	}
+
+	.footer-info {
+		padding-bottom: 120px;
+
+		display: flex;
+		justify-content: space-between;
+
+		&__title {
+			@extend %inter-700;
+			font-size: 15px;
+			line-height: 18px;
+			letter-spacing: 0.2ps;
+			color: #fff;
+
+			margin-bottom: 25px;
+		}
+
+		&__item + .footer-info__item {
+			margin-top: 16px;
+		}
+
+		&__link {
+			@extend %inter-400;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.2px;
+			color: #fff;
+
+			transition: all 0.1s linear;
+
+			&:hover {
+				color: $accent-color;
+			}
+		}
+	}
+
+	.footer-bottom {
+		text-align: center;
+
+		&__link {
+			@extend %inter-400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #8d8d8d;
+
+			transition: all 0.1s linear;
+
+			&:hover {
+				color: $accent-color;
+			}
+		}
+
+		&__link + .footer-bottom__link {
+			margin-left: 34px;
+		}
 	}
 }
