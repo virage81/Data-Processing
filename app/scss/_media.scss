@@ -1,0 +1,332 @@
+@media (max-width: 1080px) {
+	
+	.top {
+		&__info {
+			background-position: 540px 0;
+		}
+
+	}
+
+	.invest {
+		&__inner {
+			padding: 0;
+		}
+	}
+
+	.features {
+		&__inner {
+			justify-content: center;
+		}
+		&__box {
+			display: none;
+		}
+	}
+
+}
+		
+@media (max-width: 1000px) {
+	.traffic {
+		&__info {
+			max-width: 330px;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.top {
+		padding-top: 250px;
+
+		&__inner {
+			max-width: 100%;
+			margin-right: 0;
+		}
+
+		&__info {
+			background: none;
+		}
+
+		.header {
+			top: 47px;
+		}
+
+		&__info {
+			max-width: 750px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		.top-video {
+			margin: 60px auto 0;
+			max-width: 500px;
+
+			&__info {
+				text-align: left;
+			}
+		}
+	}
+
+	.invest {
+		background: none;
+		&__info {
+			max-width: 330px;
+		}
+	}
+	
+}
+
+@media (max-width: 850px) {
+	.top {
+		.reasons {
+			padding-bottom: 30px;
+		}
+	}
+
+	.traffic {
+		padding: 30px 0;
+		&__inner {
+			justify-content: center;
+			text-align: center;
+			padding-left: 0;
+		}
+
+		&__info {
+			margin-top: 0;
+		}
+
+		&__box {
+			display: none;
+		}
+
+		&__link {
+			margin: 0 auto;
+		}
+	}
+
+	.service {
+		padding: 30px 0;
+		&__box {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__item + .service__item {
+			margin-top: 30px;
+		}
+	}
+
+	.started {
+		padding: 30px 0 300px;
+		background: url(../img/decor/4.svg) center 150px/contain no-repeat,
+				url(../img/decor/5.svg) center 330px/contain no-repeat;
+	}
+
+	.invest {
+		padding: 30px 0;
+
+		&__inner {
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&__info {
+			margin-top: 0;
+			margin-bottom: 40px;
+			text-align: center;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		.tariff-plan {
+			left: 60px;
+		}
+		
+	}
+
+	.features {
+		padding: 30px 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.partners__inner {
+		flex-direction: column;
+	}
+
+	.partners__img + .partners__img {
+		margin-top: 20px;
+	}
+
+	.merge {
+		background-size: 28%;
+	}
+
+	.reasons__box {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.form {
+		&__inner {
+			padding: 20px 50px;
+		}
+	}
+}
+
+@media (max-width: 725px) {
+	.top {
+		.header {
+			&__inner {
+				position: relative;
+			}
+
+			&__nav {
+				display: none;
+
+				&.header__nav--active {
+					display: flex;
+					justify-content: center;
+
+					position: absolute;
+					bottom: -240px;
+					left: 0;
+					right: 0;
+
+					margin: 0 -15px 0 -15px;
+
+					background: #37188b;
+					box-shadow: 0 10px 20px 0 #2a1b55;
+				}
+			}
+
+			&__list {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			&__link {
+				padding: 10px;
+			}
+
+			&__item + .header__item {
+				margin-left: 0;
+				margin-top: 20px;
+			}
+	
+			&__btn {
+				margin-right: auto;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 600px) {
+	.reasons__box {
+		grid-template-columns: 1fr;
+	}
+
+	.started {
+		padding-bottom: 260px;
+	}
+
+	.invest {
+		padding-bottom: 90px;
+		.tariff-plan {
+			max-width: 260px;
+
+			padding-right: 0;
+
+			left: 0;
+
+			.thumb {
+				right: 50%;
+				transform: translateX(50%);
+				bottom: -55px;
+			}
+		}
+
+	}
+
+	.title {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.footer {
+		padding: 30px 0;
+
+		.footer-top	{
+			padding-bottom: 40px;
+		}
+
+		.footer-info {
+			padding-bottom: 60px;
+
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 40px 10px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.started {
+		padding-bottom: 160px;
+	}
+
+	.features {
+		&__info {
+			text-align: center;
+		}
+
+		&-box {
+			grid-template-columns: 1fr;
+
+			&__item::before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	.footer-bottom__link {
+		width: 100%;
+		display: block;
+	}
+
+	.footer {
+
+		.footer-bottom__link + .footer-bottom__link {
+			margin-left: 0;
+			margin-top: 15px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.form {
+		.form-group__input {
+			height: 40px;
+			font-size: 18px;
+		}
+
+		.form-group__btn {
+			height: 40px;
+		}
+	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	
+}
