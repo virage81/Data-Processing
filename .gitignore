@@ -6,8 +6,8 @@
 npm-debug.*
 
 
+app/
 node_modules/
 package-lock.json
 package.json
-app/
 gulpfile.js
