@@ -51,7 +51,7 @@ function images() {
 				}),
 			])
 		)
-		.pipe(dest('dist/img'));
+		.pipe(dest('root/img'));
 }
 
 function build() {

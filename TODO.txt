@@ -1,2 +1,0 @@
-create links in header nav - done
-fix problem with linear-gradient in the top section - 
