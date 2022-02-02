@@ -51,11 +51,11 @@ function images() {
 				}),
 			])
 		)
-		.pipe(dest('dist/img'));
+		.pipe(dest('root/img'));
 }
 
 function build() {
-	return src(['app/**/*.html', 'app/fonts/*.*', 'app/css/style.min.css', 'app/js/main.min.js'], { base: 'app' }).pipe(
+	return src(['app/*.html', 'app/fonts/*.*', 'app/css/style.min.css', 'app/js/main.min.js'], { base: 'app' }).pipe(
 		dest('root/')
 	);
 }
