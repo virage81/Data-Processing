@@ -6,7 +6,14 @@ body {
 	line-height: 22px;
 	color: $default-color;
 
-	position: relative;
+	// position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 0 auto;
 }
 
 .container {

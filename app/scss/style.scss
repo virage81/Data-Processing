@@ -5,88 +5,75 @@
 
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 
-.top {
-	padding-top: 250px;
+.header {
+	margin-top: 80px;
+	z-index: 3;
 
-	.header {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 80px;
-		z-index: 3;
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
 
-		&.header--fixed {
-			position: fixed;
-			top: 0;
+	&__btn {
+		margin-right: 45px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		border-radius: 50%;
+	}
 
-			background-color: #37188b;
-			padding: 30px 0;
-			
-			box-shadow: 0 10px 20px 0 #2a1b55;
-		}
+	&__nav {
+		margin-right: auto;
+	}
 
-		&__inner {
-			display: flex;
-			align-items: center;
-		}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
 
-		&__btn {
-			margin-right: 45px;
-			cursor: pointer;
-			background: none;
-			border: none;
-			padding: 0;
-			border-radius: 50%;
-		}
+	&__link {
+		text-transform: uppercase;
+		color: #b5b5b5;
+		font-size: 12px;
+		line-height: 28px;
+		letter-spacing: 2px;
 
-		&__nav {
-			margin-right: auto;
-		}
+		transition: all 0.2s linear;
+	}
 
-		&__list {
-			display: flex;
-			align-items: center;
-		}
-
-		&__link {
-			text-transform: uppercase;
-			color: #b5b5b5;
-			font-size: 12px;
-			line-height: 28px;
-			letter-spacing: 2px;
-
-			transition: all 0.2s linear;
-		}
-
-		&__item {
-			&:hover .header__link {
-				color: $accent-color;
-			}
-		}
-
-		&__item + .header__item {
-			margin-left: 20px;
-		}
-
-		&__user {
-			width: 112px;
-			height: 36px;
-		}
-
-		&__user + .header__user {
-			margin-left: 20px;
-		}
-
-		&__inner {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		&__info {
-			max-width: 540px;
-			width: 100%;
+	&__item {
+		&:hover .header__link {
+			color: $accent-color;
 		}
 	}
+
+	&__item + .header__item {
+		margin-left: 20px;
+	}
+
+	&__user {
+		width: 112px;
+		height: 36px;
+	}
+
+	&__user + .header__user {
+		margin-left: 20px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		max-width: 540px;
+		width: 100%;
+	}
+}
+
+.top {
+	padding-top: 124px;
 
 	&__info {
 		padding-bottom: 50px;
@@ -592,7 +579,7 @@
 }
 
 .features {
-	padding-top: 30px;
+	padding-top: 75px;
 	padding-bottom: 75px;
 	padding-left: 77px;
 
@@ -725,6 +712,8 @@
 			font-size: 15px;
 			line-height: 20px;
 			letter-spacing: 0.2px;
+
+			margin-bottom: 7px;
 		}
 	}
 }
