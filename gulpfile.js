@@ -51,14 +51,14 @@ function images() {
 				}),
 			])
 		)
-		.pipe(dest("dist/img"));
+		.pipe(dest("docs/img"));
 }
 
 function build() {
-	return src(["app/*.html", "app/fonts/*.*", "app/css/style.min.css", "app/js/main.min.js"], { base: "app" }).pipe(dest("dist/"));
+	return src(["app/*.html", "app/fonts/*.*", "app/css/style.min.css", "app/js/main.min.js"], { base: "app" }).pipe(dest("docs/"));
 }
 function cleanDist() {
-	return del("dist/");
+	return del("docs/");
 }
 
 function watching() {
